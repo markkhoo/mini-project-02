@@ -1,0 +1,44 @@
+:root{
+    /* Declare Variables */
+    --H-color:#1e81b0;
+    --P-color1:#abdbe3;
+    --P-color2:#1e81b0;
+    --card-color: #333;
+}
+
+* {
+    background-color: #0a2441;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    text-align: center;
+    padding: 14px;
+}
+
+h1, h2{
+    color: var(--H-color);
+}
+
+p {
+    color: var(--P-color1);
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box1, .box2, .box3 {
+    width: 400px;
+    height: 400px;
+    background-color: var(--card-color);
+    border: 20px solid black;
+}
+
+@media screen and (max-width: 768px) {
+    main div{
+        flex-direction: column;
+    }
+}
